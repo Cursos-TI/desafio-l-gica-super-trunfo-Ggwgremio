@@ -12,6 +12,40 @@ int main() {
     float densidadePopulacional = 1;
     int soma;
     
+    printf("Digite as informações da primeira carta: ");
+
+    printf("Digite o nome do estado: ");
+    scanf("%s", estado);
+
+    printf("Digite o codigo da carta: ");
+    scanf("%s", codigo);
+   
+    printf("Digite o nome da cidade: ");
+    scanf("%s", cidade);
+
+    printf("Digite a populacao da cidade: ");
+    scanf("%d", &Populacao);
+
+    printf("Digite a area da cidade (em km²): ");
+    scanf("%f", &Area);
+
+    printf("Digite o PIB da cidade (em bilhões): ");
+    scanf("%f", &PIB);
+
+    printf("Digite o numero de pontos turisticos da cidade: ");
+    scanf("%d", &PontosTuristicos);
+    
+    divisao = (float) Populacao / Area;
+    printf("A Densidade populacional é: %.2f\n", divisao);
+
+    divisao = (float) PIB / Populacao;
+    printf("O PIB per capita é: %.2f\n", divisao);
+
+    soma = Populacao + Area + PIB + PontosTuristicos;
+    printf("O Super Poder da carta é: %d\n", soma);
+
+    printf("Digite as informações da segunda carta carta: ");
+
     printf("Digite o nome do estado: ");
     scanf("%s", estado);
 
